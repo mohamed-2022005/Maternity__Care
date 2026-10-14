@@ -17,13 +17,13 @@ export const site = {
 
 export const images = {
   hero: "/images/clinic-interior.jpg",
-  about: "/images/consultation-room.jpg",
+  about: "/images/exam-room.jpg",
   mother: "/images/mother-care.jpg",
   ultrasound: "/images/ultrasound-room.jpg",
   gallery: [
     { src: "/images/clinic-interior.jpg", alt: "استقبال المركز" },
     { src: "/images/ultrasound-room.jpg", alt: "غرفة السونار" },
-    { src: "/images/consultation-room.jpg", alt: "غرفة الكشف والاستشارات" },
+    { src: "/images/exam-room.jpg", alt: "غرفة الكشف والاستشارات" },
     { src: "/images/mother-care.jpg", alt: "رعاية الأم أثناء الحمل" },
   ],
 };
