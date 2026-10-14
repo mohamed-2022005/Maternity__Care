@@ -159,26 +159,26 @@ export function Gallery() {
   );
 }
 
-// export function Testimonials() {
-//   return (
-//     <section className="py-24">
-//       <div className="mx-auto max-w-7xl px-5">
-//         <SectionTitle eyebrow="آراء المرضى" title="تجارب نعتز بها" desc="محتوى تجريبي — سيتم استبداله بآراء حقيقية بعد موافقة أصحابها." />
-//         <div className="grid gap-6 md:grid-cols-3">
-//           {[1, 2, 3].map((n) => (
-//             <Reveal key={n} delay={n * 80}>
-//               <figure className="h-full rounded-3xl border border-dashed bg-card p-7 shadow-card">
-//                 <Quote className="h-8 w-8 text-gold" />
-//                 <blockquote className="mt-4 leading-loose text-muted-foreground">مساحة مخصصة لرأي مريضة حقيقي يُضاف لاحقًا بعد الحصول على موافقتها.</blockquote>
-//                 <figcaption className="mt-6 text-sm font-bold">نموذج تجريبي {n}</figcaption>
-//               </figure>
-//             </Reveal>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
+export function Testimonials() {
+  return (
+    <section className="py-24">
+      <div className="mx-auto max-w-7xl px-5">
+        <SectionTitle eyebrow="آراء المرضى" title="تجارب نعتز بها" desc="محتوى تجريبي — سيتم استبداله بآراء حقيقية بعد موافقة أصحابها." />
+        <div className="grid gap-6 md:grid-cols-3">
+          {[1, 2, 3].map((n) => (
+            <Reveal key={n} delay={n * 80}>
+              <figure className="h-full rounded-3xl border border-dashed bg-card p-7 shadow-card">
+                <Quote className="h-8 w-8 text-gold" />
+                <blockquote className="mt-4 leading-loose text-muted-foreground">مساحة مخصصة لرأي مريضة حقيقي يُضاف لاحقًا بعد الحصول على موافقتها.</blockquote>
+                <figcaption className="mt-6 text-sm font-bold">نموذج تجريبي {n}</figcaption>
+              </figure>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
 
 export function Faq() {
   return (
