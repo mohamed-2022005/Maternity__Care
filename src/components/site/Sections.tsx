@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import {
   Baby, HeartPulse, Stethoscope, ScanLine, CalendarHeart, Flower2, Users, Smile, PhoneCall,
-  Sparkles, Lock, ClipboardList, X, ChevronLeft, ChevronRight, Quote, Expand,
+  Sparkles, Lock, ClipboardList, X, ChevronLeft, ChevronRight, Expand,
 } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { faqs, images, services, site } from "@/config/site";
@@ -155,27 +155,6 @@ export function Gallery() {
           <button className="absolute left-4 top-1/2 grid h-12 w-12 -translate-y-1/2 place-items-center rounded-full bg-card" onClick={(e) => { e.stopPropagation(); setIdx((idx + 1) % g.length); }} aria-label="التالي"><ChevronLeft className="h-6 w-6" /></button>
         </div>
       )}
-    </section>
-  );
-}
-
-export function Testimonials() {
-  return (
-    <section className="py-24">
-      <div className="mx-auto max-w-7xl px-5">
-        <SectionTitle eyebrow="آراء المرضى" title="تجارب نعتز بها" desc="محتوى تجريبي — سيتم استبداله بآراء حقيقية بعد موافقة أصحابها." />
-        <div className="grid gap-6 md:grid-cols-3">
-          {[1, 2, 3].map((n) => (
-            <Reveal key={n} delay={n * 80}>
-              <figure className="h-full rounded-3xl border border-dashed bg-card p-7 shadow-card">
-                <Quote className="h-8 w-8 text-gold" />
-                <blockquote className="mt-4 leading-loose text-muted-foreground">مساحة مخصصة لرأي مريضة حقيقي يُضاف لاحقًا بعد الحصول على موافقتها.</blockquote>
-                <figcaption className="mt-6 text-sm font-bold">نموذج تجريبي {n}</figcaption>
-              </figure>
-            </Reveal>
-          ))}
-        </div>
-      </div>
     </section>
   );
 }

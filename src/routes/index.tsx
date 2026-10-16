@@ -30,7 +30,7 @@ function Index() {
         <Services />
         <WhyUs />
         <Gallery />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Faq />
         <Booking />
         <Contact />

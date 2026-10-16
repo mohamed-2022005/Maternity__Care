@@ -11,21 +11,28 @@ export const navLinks = [
   { href: "#faq", label: "الأسئلة الشائعة" },
   { href: "#contact", label: "تواصل معنا" },
 ];
-
 export function Logo() {
   return (
     <a href="#top" className="flex min-w-0 items-center gap-3">
-      <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl bg-primary font-display text-lg font-extrabold text-primary-foreground shadow-card">
-        م
-      </span>
+      <img
+        src="/images/logo.jfif"
+        alt="دار الولادة التخصصي"
+        className="h-14 w-14 shrink-0 rounded-full object-cover bg-transparent shadow-sm"
+        style={{
+          imageRendering: "auto",
+        }}
+      />
       <span className="min-w-0 leading-tight">
-        <span className="block truncate font-display text-base font-bold">{site.shortName}</span>
-        <span className="block truncate text-xs text-muted-foreground">للنساء والتوليد</span>
+        <span className="block truncate font-display text-base font-bold">
+          دار الولادة التخصصي
+        </span>
+        <span className="block truncate text-xs text-muted-foreground">
+          للنساء والتوليد
+        </span>
       </span>
     </a>
   );
 }
-
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);

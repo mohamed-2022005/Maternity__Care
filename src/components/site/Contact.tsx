@@ -6,8 +6,8 @@ import { Logo, navLinks } from "./Header";
 
 export function Contact() {
   const cards = [
-    { i: Phone, t: "الهاتف", v: site.phone, href: `tel:${site.phone.replace(/\s/g, "")}`, ltr: true },
-    { i: MessageCircle, t: "واتساب", v: "راسلينا الآن", href: waLink() },
+    { i: Phone, t: "الهاتف", v: "01019018070", href: "tel:01019018070", ltr: true },
+    { i: MessageCircle, t: "واتساب", v: "راسلينا الآن", href: "https://wa.me/201019018070" },
     { i: MapPin, t: "العنوان", v: site.address },
   ];
   return (
@@ -33,9 +33,7 @@ export function Contact() {
           <div className="grid gap-6 rounded-3xl border bg-card p-7 shadow-card md:grid-cols-[auto_1fr] md:items-center">
             <div className="flex items-center gap-3"><Clock className="h-6 w-6 text-gold" /><h3 className="font-bold">مواعيد العمل</h3></div>
             <ul className="grid gap-3 sm:grid-cols-2">
-              {site.hours.map((h) => (
-                <li key={h.day} className="flex justify-between rounded-xl bg-muted px-4 py-3"><span>{h.day}</span><span className="text-muted-foreground">{h.time}</span></li>
-              ))}
+              <li className="flex justify-between rounded-xl bg-muted px-4 py-3"><span>طوارئ</span><span className="text-muted-foreground">24 ساعة</span></li>
             </ul>
           </div>
         </Reveal>
@@ -89,7 +87,7 @@ export function FloatingButtons() {
           <ArrowUp className="h-5 w-5" />
         </button>
       )}
-      <a href={waLink()} target="_blank" rel="noopener noreferrer" aria-label="تواصل عبر واتساب" className="grid h-14 w-14 place-items-center rounded-full bg-whatsapp text-primary-foreground shadow-soft transition hover:scale-110">
+      <a href="https://wa.me/201019018070" target="_blank" rel="noopener noreferrer" aria-label="تواصل عبر واتساب" className="grid h-14 w-14 place-items-center rounded-full bg-whatsapp text-primary-foreground shadow-soft transition hover:scale-110">
         <MessageCircle className="h-7 w-7" />
       </a>
     </div>
